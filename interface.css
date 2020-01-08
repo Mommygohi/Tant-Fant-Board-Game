@@ -10,4 +10,5 @@ table {
 
 td {
   border:5px solid black;
+  border-spacing:0px;
 }
