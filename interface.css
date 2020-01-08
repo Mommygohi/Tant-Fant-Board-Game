@@ -17,7 +17,7 @@ td {
 .leftSideTri {
   width:0;
   height:0;
-  border:solid 30px;
+  border:solid 2px;
   border-color:transparent transparent black black;
 }
 
