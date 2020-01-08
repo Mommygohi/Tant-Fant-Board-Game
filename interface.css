@@ -14,9 +14,16 @@ td {
   background-color:#964B00;
 }
 
-div {
+.leftSideTri {
   width:0;
   height:0;
   border:solid 30px;
   border-color:transparent transparent black black;
+}
+
+.rightSideTri {
+    width: 0;
+    height: 0;
+    border: solid 30px;
+    border-color: transparent black black transparent;
 }
