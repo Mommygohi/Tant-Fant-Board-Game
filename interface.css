@@ -7,6 +7,7 @@ table {
   width:60%;
   height:100%;
   border-spacing:0px;
+  float:center;
 }
 
 td {
