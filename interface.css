@@ -15,15 +15,15 @@ td {
 }
 
 .leftSideTri {
-  width:0;
-  height:0;
+  width:0px;
+  height:0px;
   border:solid 2px;
   border-color:transparent transparent black black;
 }
 
 .rightSideTri {
-    width: 0;
-    height: 0;
-    border: solid 30px;
-    border-color: transparent black black transparent;
+    width:0px;
+    height:0px;
+    border:solid 48.5vh;
+    border-color:transparent black black transparent;
 }
