@@ -3,13 +3,7 @@ body {
   height:97vh;
 }
 
-table {
+div {
   width:60%;
   height:100%;
-  border-spacing:0px;
-}
-
-td {
-  border:5px solid black;
-  background-color:#964B00;
 }
