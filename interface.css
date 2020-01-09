@@ -4,11 +4,10 @@ body {
 }
 
 div {
-  width:60%;
+  width:45%;
   height:90%;
   background-image:url("tantfantboard.jpg");
   background-repeat:no-repeat;
   background-position:center;
-  background-color:#663300; //Incase Image Is Unavailable
   background-size:contain;
 }
