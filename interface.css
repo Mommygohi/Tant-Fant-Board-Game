@@ -12,7 +12,6 @@ body {
   background-size:contain;
   margin-top:3%;
   margin-left:27%;
-  z-index:0;
 }
 
 .gamePiece {
@@ -20,9 +19,6 @@ body {
   height:4%;
   border:2px solid orange;
   background-color:orange;
-  position:absolute;
-  z-index:1;
   border-radius:50%;
-  top:22.5%;
-  left:28%;
+  position:relative;
 }
