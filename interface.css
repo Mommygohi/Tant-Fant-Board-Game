@@ -16,13 +16,13 @@ body {
 }
 
 .gamePiece {
-  width:10%;
-  height:10%;
+  width:3.5%;
+  height:4%;
   border:2px solid orange;
   background-color:orange;
-  position:fixed;
+  position:absolute;
   z-index:1;
   border-radius:50%;
-  top:10%;
-  left:10%;
+  top:22.5%;
+  left:28%;
 }
