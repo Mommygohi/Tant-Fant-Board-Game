@@ -38,9 +38,9 @@ function clickHandler(pieceName) {
 }
 
 function cantGoTo(turnBox, pieceName){
-  var turnBoxNumber = parseInt(turnBox);
-  var pieceNumber = parseInt(pieceName)
-  var absolute = Math.abs(turnBoxNumber - pieceNumber);
+  var turnBoxNumber = turnBox.replace( /^\D+/g, '');
+  var pieceNumber = pieceName.replace( /^\D+/g, '');
+  var absolute = Math.abs(parseInt(turnBoxNumber) - parseInt(pieceNumber));
   
   if(absolute == 1 || absolute == 3 || absolute == 4){
      return "can";
