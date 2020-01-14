@@ -6,12 +6,11 @@ var turnBox1 = "none";
 
 function clickHandler(pieceName) {
   if(playerTurn == 0){
-     if(turnBox1 == "none" && document.getElementById(pieceName).style.backgroundColor == playerColor0){
+     if(turnBox1 == "none" && document.querySelector("#" + pieceName).style.backgroundColor == playerColor0){
         turnBox1 = pieceName;
-     } else if(turnBox1 != "none" && document.getElementById(pieceName).style.backgroundColor != playerColor1){
-        var turnBox2 = pieceName;
-        document.getElementById(turnBox1).style.backgroundColor = "white";
-        document.getElementById(turnBox2).style.backgroundColor = playerColor0;
+     } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != playerColor1){
+        document.querySelector("#" + turnBox1).style.backgroundColor = "white";
+        document.querySelector("#" + pieceName).style.backgroundColor = playerColor0;
        //Reset
        turnBox1 = "none";
        playerTurn++;
