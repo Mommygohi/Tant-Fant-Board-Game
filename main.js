@@ -40,7 +40,7 @@ function clickHandler(pieceName) {
 function cantGoTo(turnBox, pieceName){
   var turnBoxNumber = turnBox.charAt(-1);
   var pieceNumber = pieceName.charAt(-1);
-  var absolute = math.abs(parseInt(turnBoxNumber) - parseInt(pieceNumber));
+  var absolute = Math.abs(parseInt(turnBoxNumber) - parseInt(pieceNumber));
   
   if(absolute == 1 || absolute == 3 || absolute == 4){
      return "can";
