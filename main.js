@@ -9,7 +9,7 @@ function clickHandler(pieceName) {
      if(turnBox1 == "none" && document.querySelector("#" + pieceName).style.backgroundColor == playerColor0){
         turnBox1 = pieceName;
      } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != playerColor1){
-        document.querySelector("#" + turnBox1).style.backgroundColor = "white";
+        document.querySelector("#" + turnBox1).style.backgroundColor = "black";
         document.querySelector("#" + pieceName).style.backgroundColor = playerColor0;
        //Reset
        turnBox1 = "none";
