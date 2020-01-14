@@ -1,6 +1,6 @@
 var playerTurn = 0;
-var playerColor0 = "orange";
-var playerColor1 = "orange";
+var playerColor0 = "red";
+var playerColor1 = "blue";
 
 var turnBox1 = "none";
 
