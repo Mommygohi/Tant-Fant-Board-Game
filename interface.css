@@ -16,10 +16,7 @@ body {
 }
 
 .rules {
-  background-image:url("mahogany.jpg");
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:center;
+  background-color:rgb(115, 43, 21);
   padding:5%;
   text-align:center;
   font-size:2.5%;
