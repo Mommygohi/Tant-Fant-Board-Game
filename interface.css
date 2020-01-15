@@ -10,9 +10,9 @@ body {
   background-repeat:no-repeat;
   background-position:center;
   background-size:contain;
-  position:relative;
-  margin-top:3%;
-  margin-left:27%;
+  position:absolute;
+  top:3%;
+  left:27%;
 }
 
 .gamePiece {
