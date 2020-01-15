@@ -15,6 +15,14 @@ body {
   left:27%;
 }
 
+.rules {
+  background-image:url("tant-fantboard.jpg");
+  padding:5%;
+  text-align:center;
+  font-size:2.5%;
+  cursor:pointer;
+}
+
 .gamePiece {
   width:5.5%;
   height:6%;
