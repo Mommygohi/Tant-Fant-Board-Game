@@ -8,7 +8,7 @@ function clickHandler(pieceName) {
   if(playerTurn == 0){
      if(turnBox1 == "none" && document.querySelector("#" + pieceName).style.backgroundColor == playerColor0){
         turnBox1 = pieceName;
-     } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != document.querySelector("#" + turnBox1) && document.querySelector("#" + pieceName).style.backgroundColor != playerColor1 && cantGoTo(turnBox1, pieceName) == "can"){
+     } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != document.querySelector("#" + turnBox1).style.backgroundColor && document.querySelector("#" + pieceName).style.backgroundColor != playerColor1 && cantGoTo(turnBox1, pieceName) == "can"){
         document.querySelector("#" + turnBox1).style.backgroundColor = "black";
         document.querySelector("#" + turnBox1).style.borderColor = "black";
         document.querySelector("#" + pieceName).style.backgroundColor = playerColor0;
@@ -16,7 +16,7 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn++;
-     } else {
+     } else if(cantGoTo(turnBox1, pieceName) == "can't"){
        alert("Can't Go There!");
        turnBox1 = "none";
      }
