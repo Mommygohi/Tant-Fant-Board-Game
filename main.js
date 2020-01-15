@@ -33,7 +33,7 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn--;
-     } else {
+     } else if(cantGoTo(turnBox1, pieceName) == "can't"){
        alert("Can't Go There!");
        turnBox1 = "none";
      }
