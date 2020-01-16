@@ -45,13 +45,23 @@ function clickHandler(pieceName) {
 }
 
 function cantGoTo(turnBox, pieceName){
-  var turnBoxNumber = turnBox.replace( /^\D+/g, '');
-  var pieceNumber = pieceName.replace( /^\D+/g, '');
-  var absolute = Math.abs(parseInt(turnBoxNumber) - parseInt(pieceNumber));
-  
-  if(absolute == 1 || absolute == 3 || absolute == 4){
+  if(turnBox == "piece1" && (pieceName == "piece2" || pieceName == "piece4" || pieceName == "piece5") && pieceName != "piece1"){
+     return "can";
+  } else if(turnBox == "piece2" && (pieceName == "piece1" || pieceName == "piece3" || pieceName == "piece5") && pieceName != "piece2"){
+     return "can";
+  } else if(turnBox == "piece3" && (pieceName == "piece2" || pieceName == "piece5" || pieceName == "piece6") && pieceName != "piece3"){
+     return "can";
+  } else if(turnBox == "piece4" && (pieceName == "piece1" || pieceName == "piece5" || pieceName == "piece7") && pieceName != "piece4"){
+     return "can";
+  } else if(turnBox == "piece6" && (pieceName == "piece3" || pieceName == "piece5" || pieceName == "piece9") && pieceName != "piece6"){
+     return "can";
+  } else if(turnBox == "piece7" && (pieceName == "piece4" || pieceName == "piece5" || pieceName == "piece8") && pieceName != "piece7"){
+     return "can";
+  } else if(turnBox == "piece8" && (pieceName == "piece5" || pieceName == "piece7" || pieceName == "piece9") && pieceName != "piece8"){
+     return "can";
+  } else if(turnBox == "piece9" && (pieceName == "piece5" || pieceName == "piece6" || pieceName == "piece8") && pieceName != "piece9"){
      return "can";
   } else {
-     return "can't";
+    return "can't";
   }
 }
