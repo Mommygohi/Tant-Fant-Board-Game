@@ -18,7 +18,7 @@ function clickHandler(pieceName) {
        playerTurn++;
      }
     
-     if(cantGoTo(turnBox1, pieceName) == "can't" && turnBox1 != "none"){
+     if(cantGoTo(turnBox1, pieceName) == "can't"){
        alert("Can't Go There!");
        turnBox1 = "none";
      }
@@ -37,7 +37,7 @@ function clickHandler(pieceName) {
        playerTurn--;
      }
     
-    if(cantGoTo(turnBox1, pieceName) == "can't" && turnBox1 != "none"){
+    if(cantGoTo(turnBox1, pieceName) == "can't"){
        alert("Can't Go There!");
        turnBox1 = "none";
      }
