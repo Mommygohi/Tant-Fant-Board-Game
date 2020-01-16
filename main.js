@@ -16,7 +16,7 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn++;
-     } else if(playerTurn == 0){
+     } else if(playerTurn == 0 && cantGoTo(turnBox1, pieceName) != "can"){
        alert("Can't Go There!");
        turnBox1 == "none";
      }
@@ -33,7 +33,7 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn--;
-     } else if(playerTurn == 1){
+     } else if(playerTurn == 1 && cantGoTo(turnBox1, pieceName) != "can"){
        alert("Can't Go There!");
        turnBox1 == "none";
      }
