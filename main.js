@@ -5,9 +5,12 @@ var playerColor1 = "blue";
 var turnBox1 = "none";
 
 function clickHandler(pieceName) {
+  var status = "none";
+  
   if(playerTurn == 0){
      if(turnBox1 == "none" && document.querySelector("#" + pieceName).style.backgroundColor == playerColor0){
         turnBox1 = pieceName;
+        status = "some";
      } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != document.querySelector("#" + turnBox1).style.backgroundColor && document.querySelector("#" + pieceName).style.backgroundColor != playerColor1 && cantGoTo(turnBox1, pieceName) == "can"){
         document.querySelector("#" + turnBox1).style.backgroundColor = "black";
         document.querySelector("#" + turnBox1).style.borderColor = "black";
@@ -16,15 +19,14 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn++;
-     } else if(playerTurn == 0 && cantGoTo(turnBox1, pieceName) != "can"){
-       alert("Can't Go There!");
-       turnBox1 = "none";
+       status = "some";
      }
   }
   
   if(playerTurn == 1){
      if(turnBox1 == "none" && document.querySelector("#" + pieceName).style.backgroundColor == playerColor1){
         turnBox1 = pieceName;
+        status = "some";
      } else if(turnBox1 != "none" && document.querySelector("#" + pieceName).style.backgroundColor != playerColor0 && cantGoTo(turnBox1, pieceName) == "can"){
         document.querySelector("#" + turnBox1).style.backgroundColor = "black";
         document.querySelector("#" + turnBox1).style.borderColor = "black";
@@ -33,10 +35,13 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn--;
-     } else if(playerTurn == 1 && cantGoTo(turnBox1, pieceName) != "can"){
-       alert("Can't Go There!");
-       turnBox1 = "none";
+       status = "some";
      }
+  }
+  
+  if(status == "none"){
+     alert("Can't Go There!");
+     turnBox1 = "none";
   }
 }
 
