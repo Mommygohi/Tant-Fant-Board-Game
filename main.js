@@ -54,6 +54,8 @@ function cantGoTo(turnBox, pieceName){
      return "can";
   } else if(turnBox == "piece4" && (pieceName == "piece1" || pieceName == "piece5" || pieceName == "piece7") && pieceName != "piece4"){
      return "can";
+  } else if(turnBox == "piece5" && pieceName != "piece5"){
+     return "can";
   } else if(turnBox == "piece6" && (pieceName == "piece3" || pieceName == "piece5" || pieceName == "piece9") && pieceName != "piece6"){
      return "can";
   } else if(turnBox == "piece7" && (pieceName == "piece4" || pieceName == "piece5" || pieceName == "piece8") && pieceName != "piece7"){
