@@ -16,11 +16,9 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn++;
-     } else {
-       if(turnBox1 == pieceName || cantGoTo(turnBox1, pieceName) == "can't"){
-          alert("Can't Go There!");
-          turnBox1 = "none";
-       }
+     } else if(playerTurn == 0){
+       alert("Can't Go There!");
+       turnBox1 == "none";
      }
   }
   
@@ -35,12 +33,10 @@ function clickHandler(pieceName) {
        //Reset
        turnBox1 = "none";
        playerTurn--;
-     } else {
-       if(turnBox1 == pieceName || cantGoTo(turnBox1, pieceName) == "can't"){
-          alert("Can't Go There!");
-          turnBox1 = "none";
-       }
-    }
+     } else if(playerTurn == 1){
+       alert("Can't Go There!");
+       turnBox1 == "none";
+     }
   }
 }
 
