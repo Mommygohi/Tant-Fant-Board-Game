@@ -37,9 +37,9 @@ function clickHandler(pieceName) {
        playerTurn--;
      } else {
        if(turnBox1 == pieceName || cantGoTo(turnBox1, pieceName) == "can't"){
-          lert("Can't Go There!");
-          urnBox1 = "none";
-       
+          alert("Can't Go There!");
+          turnBox1 = "none";
+       }
     }
   }
 }
