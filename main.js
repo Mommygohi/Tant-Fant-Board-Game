@@ -43,6 +43,8 @@ function clickHandler(pieceName) {
      alert("Can't Go There!");
      turnBox1 = "none";
   }
+  
+  winChecker();
 }
 
 function cantGoTo(turnBox, pieceName){
