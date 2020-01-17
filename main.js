@@ -68,3 +68,59 @@ function cantGoTo(turnBox, pieceName){
     return "can't";
   }
 }
+
+function winChecker(){
+  var pieceOne = document.querySelector("piece1").style.backgroundColor;
+  var pieceTwo = document.querySelector("piece2").style.backgroundColor;
+  var pieceThree = document.querySelector("piece3").style.backgroundColor;
+  var pieceFour = document.querySelector("piece4").style.backgroundColor;
+  var pieceFive = document.querySelector("piece5").style.backgroundColor;
+  var pieceSix = document.querySelector("piece6").style.backgroundColor;
+  var pieceSeven = document.querySelector("piece7").style.backgroundColor;
+  var pieceEight = document.querySelector("piece8").style.backgroundColor;
+  var pieceNine = document.querySelector("piece9").style.backgroundColor;
+  
+  //Horizontal Win Detection
+  if(pieceOne == playerColor0 && pieceTwo == playerColor0 && pieceThree == playerColor0){
+     alert(playerColor0 + " Wins!");
+  } else if(pieceFour == playerColor0 && pieceFive == playerColor0 && pieceSix == playerColor0){
+     alert(playerColor0 + " Wins!");
+  } else if(pieceSeven == playerColor0 && pieceEight == playerColor0 && pieceNine == playerColor0){
+     alert(playerColor0 + " Wins!");
+  }
+  if(pieceOne == playerColor1 && pieceTwo == playerColor1 && pieceThree == playerColor1){
+     alert(playerColor1 + " Wins!");
+  } else if(pieceFour == playerColor1 && pieceFive == playerColor1 && pieceSix == playerColor1){
+     alert(playerColor1 + " Wins!");
+  } else if(pieceSeven == playerColor1 && pieceEight == playerColor1 && pieceNine == playerColor1){
+     alert(playerColor1 + " Wins!");
+  }
+  
+  //Vertical Win Detection
+  if(pieceOne == playerColor0 && pieceFour == playerColor0 && pieceSeven == playerColor0){
+     alert(playerColor0 + " Wins!");
+  } else if(pieceTwo == playerColor0 && pieceFive == playerColor0 && pieceEight == playerColor0){
+     alert(playerColor0 + " Wins!");
+  } else if(pieceThree == playerColor0 && pieceSix == playerColor0 && pieceNine == playerColor0){
+     alert(playerColor0 + " Wins!");
+  }
+  if(pieceOne == playerColor1 && pieceFour == playerColor1 && pieceSeven == playerColor1){
+     alert(playerColor1 + " Wins!");
+  } else if(pieceTwo == playerColor1 && pieceFive == playerColor1 && pieceEight == playerColor1){
+     alert(playerColor1 + " Wins!");
+  } else if(pieceThree == playerColor1 && pieceSix == playerColor1 && pieceNine == playerColor1){
+     alert(playerColor1 + " Wins!");
+  }
+  
+  //Diagonal Win Detection
+  if(pieceOne == playerColor0 && pieceFive == playerColor0 && pieceNine == playerColor0){
+     alert(playerColor0 + " Wins!");
+  } else if(pieceThree == playerColor0 && pieceFive == playerColor0 && pieceSeven == playerColor0){
+     alert(playerColor0 + " Wins!");
+  }
+  if(pieceOne == playerColor1 && pieceFive == playerColor1 && pieceNine == playerColor1){
+     alert(playerColor1 + " Wins!");
+  } else if(pieceThree == playerColor1 && pieceFive == playerColor1 && pieceSeven == playerColor1){
+     alert(playerColor1 + " Wins!");
+  }
+}
