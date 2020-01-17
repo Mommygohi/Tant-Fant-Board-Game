@@ -105,10 +105,7 @@ function winChecker(){
   }
   
   //Vertical Win Detection
-  if(pieceOne == playerColor0 && pieceFour == playerColor0 && pieceSeven == playerColor0){
-     alert(playerColor0 + " Wins!");
-     location.reload();
-  } else if(pieceTwo == playerColor0 && pieceFive == playerColor0 && pieceEight == playerColor0){
+  if(pieceTwo == playerColor0 && pieceFive == playerColor0 && pieceEight == playerColor0){
      alert(playerColor0 + " Wins!");
      location.reload();
   } else if(pieceThree == playerColor0 && pieceSix == playerColor0 && pieceNine == playerColor0){
@@ -119,9 +116,6 @@ function winChecker(){
      alert(playerColor1 + " Wins!");
      location.reload();
   } else if(pieceTwo == playerColor1 && pieceFive == playerColor1 && pieceEight == playerColor1){
-     alert(playerColor1 + " Wins!");
-     location.reload();
-  } else if(pieceThree == playerColor1 && pieceSix == playerColor1 && pieceNine == playerColor1){
      alert(playerColor1 + " Wins!");
      location.reload();
   }
