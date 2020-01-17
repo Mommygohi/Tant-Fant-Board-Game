@@ -72,15 +72,15 @@ function cantGoTo(turnBox, pieceName){
 }
 
 function winChecker(){
-  var pieceOne = document.querySelector("piece1").style.backgroundColor;
-  var pieceTwo = document.querySelector("piece2").style.backgroundColor;
-  var pieceThree = document.querySelector("piece3").style.backgroundColor;
-  var pieceFour = document.querySelector("piece4").style.backgroundColor;
-  var pieceFive = document.querySelector("piece5").style.backgroundColor;
-  var pieceSix = document.querySelector("piece6").style.backgroundColor;
-  var pieceSeven = document.querySelector("piece7").style.backgroundColor;
-  var pieceEight = document.querySelector("piece8").style.backgroundColor;
-  var pieceNine = document.querySelector("piece9").style.backgroundColor;
+  var pieceOne = document.querySelector("#piece1").style.backgroundColor;
+  var pieceTwo = document.querySelector("#piece2").style.backgroundColor;
+  var pieceThree = document.querySelector("#piece3").style.backgroundColor;
+  var pieceFour = document.querySelector("#piece4").style.backgroundColor;
+  var pieceFive = document.querySelector("#piece5").style.backgroundColor;
+  var pieceSix = document.querySelector("#piece6").style.backgroundColor;
+  var pieceSeven = document.querySelector("#piece7").style.backgroundColor;
+  var pieceEight = document.querySelector("#piece8").style.backgroundColor;
+  var pieceNine = document.querySelector("#piece9").style.backgroundColor;
   
   //Horizontal Win Detection
   if(pieceOne == playerColor0 && pieceTwo == playerColor0 && pieceThree == playerColor0){
